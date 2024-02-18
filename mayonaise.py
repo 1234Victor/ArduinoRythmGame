@@ -354,22 +354,22 @@ def read_from_arduino1():
 
       
                 if x < -12 and z < 7 and z > -7:
-                    print("======EAT======")
+                    print("======UP======")
                     with value_lock1:
                         lineLeft.append([1, 0, 0, 0])
                     print(f"{x:.3f} ____ {y:.3f} ____ {z:.3f}")
                 elif x > 7.3 and z < 7 and z > -7:
-                    print("======SHIT======")
+                    print("======DOWN======")
                     with value_lock1:
                         lineLeft.append([0, 1, 0, 0])
                     print(f"{x:.3f} ____ {y:.3f} ____ {z:.3f}")
                 elif z > 11:
-                    print("======FUCK======")
+                    print("======LEFT======")
                     with value_lock1:
                         lineLeft.append([0, 0, 1, 0])
                     print(f"{x:.3f} ____ {y:.3f} ____ {z:.3f}")
                 elif z < -11 and z > -18.7:
-                    print("======YOU======")
+                    print("======RIGHT======")
                     with value_lock1:
                         lineLeft.append([0, 0, 0, 1])
                     print(f"{x:.3f} ____ {y:.3f} ____ {z:.3f}")
@@ -451,22 +451,22 @@ def read_from_arduino2():
 
       
                 if x < -12 and z < 7 and z > -7:
-                    print("======EAT======")
+                    print("======UP======")
                     with value_lock2:
                         lineRight.append([1, 0, 0, 0])
                     print(f"{x:.3f} ____ {y:.3f} ____ {z:.3f}")
                 elif x > 7.3 and z < 7 and z > -7:
-                    print("======SHIT======")
+                    print("======DOWN======")
                     with value_lock2:
                         lineRight.append([0, 1, 0, 0])
                     print(f"{x:.3f} ____ {y:.3f} ____ {z:.3f}")
                 elif z > 11:
-                    print("======FUCK======")
+                    print("======LEFT======")
                     with value_lock2:
                         lineRight.append([0, 0, 1, 0])
                     print(f"{x:.3f} ____ {y:.3f} ____ {z:.3f}")
                 elif z < -11 and z > -18.7:
-                    print("======YOU======")
+                    print("======RIGHT======")
                     with value_lock2:
                         lineRight.append([0, 0, 0, 1])
                     print(f"{x:.3f} ____ {y:.3f} ____ {z:.3f}")
